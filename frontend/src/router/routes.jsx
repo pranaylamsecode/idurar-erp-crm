@@ -7,11 +7,19 @@ const NotFound = lazy(() => import('@/pages/NotFound.jsx'));
 
 const Dashboard = lazy(() => import('@/pages/Dashboard'));
 const Customer = lazy(() => import('@/pages/Customer'));
+
 const Invoice = lazy(() => import('@/pages/Invoice'));
 const InvoiceCreate = lazy(() => import('@/pages/Invoice/InvoiceCreate'));
-
 const InvoiceRead = lazy(() => import('@/pages/Invoice/InvoiceRead'));
 const InvoiceUpdate = lazy(() => import('@/pages/Invoice/InvoiceUpdate'));
+
+/* blog */
+
+const Blog = lazy(() => import('@/pages/Blog'));
+const BlogCreate = lazy(() => import('@/pages/Blog/BlogCreate'));
+const BlogRead = lazy(() => import('@/pages/Blog/BlogRead'));
+const BlogUpdate = lazy(() => import('@/pages/Blog/BlogUpdate'));
+
 const InvoiceRecordPayment = lazy(() => import('@/pages/Invoice/InvoiceRecordPayment'));
 const Quote = lazy(() => import('@/pages/Quote/index'));
 const QuoteCreate = lazy(() => import('@/pages/Quote/QuoteCreate'));
@@ -69,6 +77,24 @@ let routes = {
       path: '/invoice/update/:id',
       element: <InvoiceUpdate />,
     },
+
+    {
+      path: '/blog',
+      element: <Blog />,
+    },
+    {
+      path: '/blog/create',
+      element: <BlogCreate />,
+    },
+    {
+      path: '/blog/read/:id',
+      element: <BlogRead />,
+    },
+    {
+      path: '/blog/update/:id',
+      element: <BlogUpdate />,
+    },
+
     {
       path: '/invoice/pay/:id',
       element: <InvoiceRecordPayment />,
