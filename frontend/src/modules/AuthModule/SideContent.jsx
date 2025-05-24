@@ -1,5 +1,5 @@
 import { Space, Layout, Divider, Typography } from 'antd';
-import logo from '@/style/images/idurar-crm-erp.svg';
+import logo from '@/style/images/logo-icon.svg';
 import useLanguage from '@/locale/useLanguage';
 import { useSelector } from 'react-redux';
 
@@ -27,13 +27,9 @@ export default function SideContent() {
           height={63}
           width={220}
         />
-
         <Title level={1} style={{ fontSize: 28 }}>
-          Free Open Source ERP / CRM
+          ERP / CRM
         </Title>
-        <Text>
-          Accounting / Invoicing / Quote App <b /> based on Node.js React.js Ant Design
-        </Text>
 
         <div className="space20"></div>
       </div>
